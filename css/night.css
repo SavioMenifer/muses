@@ -8,6 +8,7 @@
 .cm-s-night .CodeMirror-guttermarker { color: white; }
 .cm-s-night .CodeMirror-guttermarker-subtle { color: #bbb; }
 .cm-s-night .CodeMirror-linenumber { color: #f8f8f8; }
+.cm-s-night .CodeMirror-placeholder { color: #7a7a7a; }
 .cm-s-night .CodeMirror-cursor { border-left: 1px solid white; }
 
 .cm-s-night span.cm-comment { color: #8900d1; }

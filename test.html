@@ -2,7 +2,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Muses » Tweak your model</title>
+	<title>Muses » Test your model</title>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/codemirror.css" />
@@ -14,16 +14,16 @@
 
 <body>
 	<div class="topbar">
-		<div class="tab tab-current">Tweak</div>
-		<div class="tab">Test<a href="test.html"><span class="tab-link"></span></a></div>
+		<div class="tab">Tweak<a href="index.html"><span class="tab-link"></span></a></div>
+		<div class="tab tab-current">Test</div>
 		<div class="run-button">&#9658; Run</div>
 	</div>
 	<div class="flex-container">
 		<div class="flex-item" id="col1">
-			<h4><span class="circled">1</span>Select algorithm</h4>
+			<h4><span class="circled">1</span>Select model</h4>
 
 			<div id="model-select">
-				<input class="search" placeholder="Search algorithms">
+				<input class="search" placeholder="Search models">
 				<ul class="list">
 					<li class="list-item">
 						<h3 class="model-name">Jonny Stromberg</h3>
@@ -48,19 +48,14 @@
 		<div class="flex-item" id="col2">
 			<h4><span class="circled">2</span>Input data</h4>
 
-			<div class="data-buttons">
-				<button type="button" class="upload-button"><i class="fas fa-database"></i>&nbsp;&nbsp;Select database</button>
-				<span>OR</span>
-				<button type="button" class="upload-button"><i class="fas fa-file-upload"></i>&nbsp;&nbsp;Upload CSV</button>
-			</div>
 			<div id="json-input"></div>
 		</div>
 		<div class="flex-item" id="col3">
 			<h4><span class="circled">3</span>Results</h4>
 
-			<div id="canvas">
-				<div class="circle" id="circles-1"></div>
-			</div>
+			<div id="output"></div>
+			<div id="api_code"></div>
+			<button type="button" class="copy-button"><i class="fas fa-copy"></i>&nbsp;&nbsp;Copy to clipboard</button>
 		</div>
 	</div>
 

@@ -9,20 +9,35 @@ $('.list-item').click(function(e) {
     $(this).addClass('selected');
  });
 
-var myCodeMirror = CodeMirror(document.getElementById("json-input"), {
-  value: "function myScript(){return 100;}\n",
+var jsonInput = CodeMirror(document.getElementById("json-input"), {
+  placeholder: "Enter JSON input here",
   mode:  "javascript",
   theme: "night"
 });
 
-var myCodeMirror = CodeMirror(document.getElementById("output"), {
-  value: "Output shows up here\n",
+var output = CodeMirror(document.getElementById("output"), {
+  placeholder: "Output will appear here",
   mode:  "javascript",
   theme: "night"
 });
 
-var myCodeMirror = CodeMirror(document.getElementById("api_code"), {
-  value: "API code shows up here\n",
+var api_code = CodeMirror(document.getElementById("api_code"), {
+  placeholder: "API code will appear here",
   mode:  "javascript",
   theme: "night"
 });
+
+Circles.create({
+  id:           'circles-1',
+  radius:       90,
+  value:        43,
+  maxValue:     100,
+  width:        10,
+  text:         function(value){return '<span class="percentage">' + value + '<span style="font-size: 30px">%</span></span>';},
+  colors:       ['#2c393f', '#599eff'],
+  duration:     400,
+  wrpClass:     'circles-wrp',
+  textClass:    'circles-text',
+  styleWrapper: true,
+  styleText:    true
+})
